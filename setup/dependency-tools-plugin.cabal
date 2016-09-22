@@ -1,0 +1,24 @@
+name:                dependency-tools-plugin
+version:             0.1.0.0
+synopsis:            Cabal plugin for providing dependency reflection
+description:         This package provides tools for checking the licenses
+                     of all transitive dependencies and for making information
+                     about those dependencies available to package.
+homepage:            https://github.com/glguy/irc-core
+license:             ISC
+license-file:        LICENSE
+author:              Eric Mertens
+maintainer:          emertens@gmail.com
+copyright:           2016 Eric Mertens
+category:            Distribution
+build-type:          Simple
+extra-source-files:  ChangeLog.md
+cabal-version:       >=1.10
+
+library
+  exposed-modules:     DependencyTools
+  build-depends:       base     >=4.9  && <4.10,
+                       Cabal    >=1.24 && <1.25,
+                       filepath >=1.4  && <1.5
+  hs-source-dirs:      src
+  default-language:    Haskell2010

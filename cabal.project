@@ -1,4 +1,5 @@
 packages:
+  setup/dependency-tools-plugin.cabal
   lib/irc-core.cabal
   bot/irc-core-bot.cabal
   glirc.cabal
